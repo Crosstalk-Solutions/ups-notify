@@ -20,11 +20,11 @@ def low_battery():
     os.system('curl -H "Content-Type: application/json" -X POST -d \'{"content": "<@' + DISCORD_USER_ID + '> UPS battery is low. Shutting down the system in 30 seconds."}\' ' + DISCORD_WEBHOOK_URL)
     # send a message to the user
     os.system('echo "UPS battery is low. Shutting down the system in 30 seconds." | wall')
-    time.sleep(30)
+    # time.sleep(30)
     # shut down the system
-    os.system('sudo shutdown -h now')
+    # os.system('sudo shutdown -h now')
     # exit the script
-    exit()
+    # exit()
 
 
 while True:
