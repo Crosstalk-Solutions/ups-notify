@@ -1,0 +1,15 @@
+[Unit]
+Description=UPS Battery Watch Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=15
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/ups-notify/ups-notify.py
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

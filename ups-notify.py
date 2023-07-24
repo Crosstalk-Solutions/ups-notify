@@ -24,6 +24,8 @@ def low_battery():
     time.sleep(30)
     # shut down the system
     os.system('sudo shutdown -h now')
+    # exit the script
+    exit()
 
 
 while True:
