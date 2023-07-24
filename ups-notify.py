@@ -11,8 +11,7 @@ LO_DT_PIN = 17
 DISCORD_WEBHOOK_URL = 'REPLACE WITH YOUR DISCORD WEBHOOK URL'
 DISCORD_USER_ID = '408878638109425665'
 # When the LO_DT pin is high, the UPS battery voltage is low
-# Set the chosen pin to be an input pin and enable the internal pull-up resistor
-GPIO.setup(LO_DT_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(LO_DT_PIN, GPIO.IN)
 
 
 def low_battery():
