@@ -1,3 +1,8 @@
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run the installer as root"
+  exit
+fi
+
 echo "Installing UPS Notify..."
 
 echo "Copying service script"
