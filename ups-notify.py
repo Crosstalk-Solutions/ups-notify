@@ -2,7 +2,6 @@
 import RPi.GPIO as GPIO
 import time
 import os
-import sys
 
 
 # Set the GPIO pin numbering mode
